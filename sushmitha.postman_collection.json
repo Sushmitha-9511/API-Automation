@@ -12,10 +12,9 @@
 				{
 					"listen": "test",
 					"script": {
-						"id": "73124db3-d6ee-4238-9b1e-de5702e9fce9",
 						"exec": [
 							"pm.test(\"Status code is 200\", function () {\r",
-							"    pm.response.to.have.status(404);\r",
+							"    pm.response.to.have.status(200);\r",
 							"});\r",
 							"\r",
 							"postman.setNextRequest(\"Request2\");"
@@ -68,10 +67,9 @@
 				{
 					"listen": "test",
 					"script": {
-						"id": "ec1f9cb8-b327-474f-8e77-ea7a355cc95a",
 						"exec": [
 							"pm.test(\"Status code is 200\", function () {\r",
-							"    pm.response.to.have.status(200);\r",
+							"    pm.response.to.have.status(404);\r",
 							"});"
 						],
 						"type": "text/javascript"
@@ -116,6 +114,5 @@
 			},
 			"response": []
 		}
-	],
-	"protocolProfileBehavior": {}
+	]
 }
